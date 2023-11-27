@@ -29,7 +29,8 @@ When dealing with unsigned integer types, comparisons with `!= 0` are cheaper th
 
 ![](https://global.discourse-cdn.com/business6/uploads/zeppelin/original/2X/3/363a367d6d68851f27d2679d10706cd16d788b96.png)
 
-**NOTION** _To update this with using at least 0.8.6 there is no difference in gas usage with `!= 0` or `> 0`_
+> [!IMPORTANT]
+> To update this with using at least 0.8.6 there is no difference in gas usage with `!= 0` or `> 0`
 
 ### 5. Use shift right/left instead of division/multiplication if possible
 While the `DIV` / `MUL` opcode uses 5 gas, the `SHR` / `SHL` opcode only uses 3 gas. Furthermore, beware that Solidity's division operation also includes a division-by-0 prevention which is bypassed using shifting. Eventually, overflow checks are never performed for shift operations as they are done for arithmetic operations. Instead, the result is always truncated.
