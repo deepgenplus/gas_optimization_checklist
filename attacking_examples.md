@@ -12,3 +12,5 @@ Even if your contract does not contain an unbounded loop, an attacker can preven
 
 A Block Stuffing attack can be used on any contract requiring an action within a certain time period. However, as with any attack, it is only profitable when the expected reward exceeds its cost. The cost of this attack is directly proportional to the number of blocks which need to be stuffed. If a large payout can be obtained by preventing actions from other participants, your contract will likely be targeted by such an attack.
 
+> [!IMPORTANT]
+> Stuffing a whole block with dummy transactions is very cheap on Binance Smart Chain.
