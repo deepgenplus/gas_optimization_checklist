@@ -11,6 +11,7 @@ bool constant FEE_DOWN = false;
 Address SampleAddress = 0;
 ```
 
+
 ### 3. OR in `if-`condition can be rewritten to two single if conditions
 ```solidity
 if (py_init >= MAX_PRICE_VALUE || py_final >= MAX_PRICE_VALUE) return 1;
